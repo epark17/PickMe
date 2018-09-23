@@ -7,15 +7,11 @@ contract Election {
         uint voteCount;
     }
 
-    // Store accounts that have voted
     mapping(address => bool) public voters;
-    // Store Candidates
-    // Fetch Candidate
     mapping(uint => Candidate) public candidates;
-    // Store Candidates Count
+
     uint public candidatesCount;
 
-    // voted event
     event votedEvent (
         uint indexed _candidateId
     );
@@ -23,6 +19,11 @@ contract Election {
     function Election () public {
         addCandidate("Candidate 1");
         addCandidate("Candidate 2");
+        addCandidate("Candidate 3");
+        addCandidate("Candidate 4");
+        addCandidate("Candidate 5");
+        addCandidate("Candidate 6");
+        addCandidate("Candidate 7");
     }
 
     function addCandidate (string _name) private {
@@ -31,19 +32,10 @@ contract Election {
     }
 
     function vote (uint _candidateId) public {
-        // require that they haven't voted before
         require(!voters[msg.sender]);
-
-        // require a valid candidate
         require(_candidateId > 0 && _candidateId <= candidatesCount);
-
-        // record that voter has voted
         voters[msg.sender] = true;
-
-        // update candidate vote Count
         candidates[_candidateId].voteCount ++;
-
-        // trigger voted event
         votedEvent(_candidateId);
     }
 }
