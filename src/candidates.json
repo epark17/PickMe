@@ -1,0 +1,37 @@
+[
+  {
+    "id": 0,
+    "name": "JEON SOMI",
+    "picture": "images/candidate1.jpg"
+  },
+  {
+    "id": 1,
+    "name": "KIM SE JEONG",
+    "picture": "images/candidate2.jpg"
+  },
+  {
+    "id": 2,
+    "name": "KIM CHUNG HA",
+    "picture": "images/candidate3.jpg"
+  },
+  {
+    "id": 3,
+    "name": "KANG MI NA",
+    "picture": "images/candidate4.jpg"
+  },
+  {
+    "id": 4,
+    "name": "JUNG CHAE YEON",
+    "picture": "images/candidate5.jpg"
+  },
+  {
+    "id": 5,
+    "name": "ZHOU JIE QIONG",
+    "picture": "images/candidate6.jpg"
+  },
+  {
+    "id": 6,
+    "name": "KIM DO YEON",
+    "picture": "images/candidate7.jpg"
+  }
+]
