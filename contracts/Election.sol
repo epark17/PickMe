@@ -17,13 +17,13 @@ contract Election {
     );
 
     function Election () public {
-        addCandidate("Candidate 1");
-        addCandidate("Candidate 2");
-        addCandidate("Candidate 3");
-        addCandidate("Candidate 4");
-        addCandidate("Candidate 5");
-        addCandidate("Candidate 6");
-        addCandidate("Candidate 7");
+        addCandidate("JEON SOMI");
+        addCandidate("KIM SE JEONG");
+        addCandidate("KIM CHUNG HA");
+        addCandidate("KANG MI NA");
+        addCandidate("JUNG CHAE YEON");
+        addCandidate("ZHOU JIE QIONG");
+        addCandidate("KIM DO YEON");
     }
 
     function addCandidate (string _name) private {
