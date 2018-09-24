@@ -5,6 +5,18 @@ App = {
   hasVoted: false,
 
   init: () => {
+    // Load CDs
+    $.getJSON('../candidates.json', function (data) {
+      let petsRow = $('#petsRow');
+      let petTemplate = $('#petTemplate');
+      for (i = 0; i < data.length; i++) {
+        petTemplate.find('.panel-title').text(data[i].name);
+        petTemplate.find('img').attr('src', data[i].picture);
+        petsRow.append(petTemplate.html());
+      }
+    });
+
+
     return App.initWeb3();
   },
 
